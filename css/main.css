@@ -1,0 +1,136 @@
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 14px;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.disabled {
+  display: none;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.margin {
+  margin: 20px;
+}
+
+.box {
+  width: 320px;
+  height: 360px;
+  background: linear-gradient(0deg, hsl(215, 27%, 12%) 0%, hsl(217, 22%, 16%) 100%);
+  border-radius: 15px;
+}
+.box__star, .box__rating-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+}
+.box__star img, .box__rating-circle img {
+  width: 15px;
+}
+.box__heading {
+  font-size: 24px;
+  color: hsl(0, 0%, 100%);
+}
+.box__description {
+  line-height: 22px;
+}
+.box__rating {
+  display: flex;
+  justify-content: space-between;
+}
+.box__rating-circle {
+  font-size: 12px;
+  color: hsl(217, 12%, 63%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.box__rating-circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.box__submit {
+  margin: 10px 20px;
+  padding: 12px;
+  width: 280px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.box__submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
+}
+.box__selected {
+  margin: 0 auto;
+  padding: 5px;
+  width: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 25px;
+}
+
+.checked {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(25, 97%, 53%);
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+  .margin {
+    margin: 25px;
+  }
+  .box {
+    width: 400px;
+    height: 400px;
+  }
+  .box__heading {
+    font-size: 28px;
+  }
+  .box__star, .box__rating-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .box__star img, .box__rating-circle img {
+    width: 20px;
+  }
+  .box__rating-circle {
+    font-size: 15px;
+  }
+  .box__submit {
+    width: 360px;
+  }
+}/*# sourceMappingURL=main.css.map */

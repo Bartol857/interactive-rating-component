@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  <!-- Rating state start -->
+  <main>
+   <section class="rating">
+    <div class="box">
+      <div class="box__star margin">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <h1 class="box__heading margin">How did we do?</h1>
+      <p class="box__description margin">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="box__rating margin">
+        <button type="" class="box__rating-circle">1</button>
+        <button class="box__rating-circle">2</button>
+        <button class="box__rating-circle">3</button>
+        <button class="box__rating-circle">4</button>
+        <button class="box__rating-circle">5</button>
+      </div>
+      <button class="box__submit">Submit</button>
+    </div>
+   </section>
+
+  <!-- Rating state end -->
+  <!-- Thank you state start -->
+
+   <section class="thanks disabled">
+    <div class="box">
+      <div class="box__image margin">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+      <p class="box__selected">You selected <span class="rate"></span> out of 5</p>
+      <h1 class="box__heading margin">Thank you!</h1>
+      <p class="box__description margin">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+   </section>
+
+   <!-- Thank you state end -->
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Bartol857">Bartol857</a>.
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
